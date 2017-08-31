@@ -7,29 +7,31 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="">
+<input type="text" name="a"/>
+<input type="text" name="b"/>
+<input type="submit">
+</form>
 
-	<%
+	<% if(request.getParameter("a")!=null &&
+			request.getParameter("b")!=null){
+	
 		int a = Integer.parseInt(request.getParameter("a"));
 		int b = Integer.parseInt(request.getParameter("b"));
 	%>
-
-	a=
-	<%=a%><br> b=
-	<%=b%>
-	<br>
+	a =
+	<%=a%><br> b =
+	<%=b%><br>
 	<ul>
-		<%
-			while (a < b) {
-		%>
-
-		<li><%=a%></li>
-
-		<%
-			a++;
-			}
-		%>
-	</ul>
-
+	<%
+		while (a <= b) {
+	%>
+	<li><%=a%></li>
+	<%
+		a++;
+		}}
+	%>
+</ul>
 </body>
 </html>
 
