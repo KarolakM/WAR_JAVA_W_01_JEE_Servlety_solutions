@@ -13,12 +13,10 @@
     <servlet-name>Servlet_03</servlet-name>
     <servlet-class>pl.coderslab.web.c_Servlety_1.Servlet_03</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>Servlet_03</servlet-name>
     <url-pattern>/Servlet_03/</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Servlet_02d</servlet-name>
     <servlet-class>pl.coderslab.web.d_Servlety_2.Servlet_02d</servlet-class>
@@ -27,7 +25,6 @@
       <param-value>coderslab.pl</param-value>
     </init-param>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>Servlet_02d</servlet-name>
     <url-pattern>/Servlet_02d</url-pattern>
@@ -36,7 +33,6 @@
     <param-name>applicationName</param-name>
     <param-value>MyApplicationName</param-value>
   </context-param>
-  
   <error-page>
     <error-code>404</error-code>
     <location>/b_jsp_2/pageNotFound.jsp</location>
@@ -45,4 +41,16 @@
     <exception-type>java.lang.NullPointerException</exception-type>
     <location>/b_jsp_2/nullPointerException.jsp</location>
   </error-page>
+  <servlet>
+    <servlet-name>Servlet_01_MVC</servlet-name>
+    <servlet-class>pl.coderslab.web.MVC.Servlet_01_MVC</servlet-class>
+    <init-param>
+      <param-name>exchangeRate</param-name>
+      <param-value>0.23</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet_01_MVC</servlet-name>
+    <url-pattern>/Servlet_01_MVC</url-pattern>
+  </servlet-mapping>
 </web-app>
